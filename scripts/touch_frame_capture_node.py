@@ -78,7 +78,7 @@ if __name__ == '__main__':
 
 	rospack = rospkg.RosPack()
 
-	digit_path = rospack.get_path('digit')
+	digit_path = rospack.get_path('digit_tactile_sensor')
 	record_info_path = digit_path + os.sep + "src/record_info.json"
 	rospy.loginfo(record_info_path)
 

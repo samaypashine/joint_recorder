@@ -37,8 +37,8 @@ def callback(msg):
 		elif msg.command.data == "stop":
 			rospy.loginfo("In STOP condition of recordService callback function")
 
-			channels = 1
-			rate = 16000  # 16000, 44100
+			channels = 2
+			rate = 44100  # 16000, 44100
 
 			wf = wave.open(folderName, 'wb')
 			wf.setnchannels(channels)
